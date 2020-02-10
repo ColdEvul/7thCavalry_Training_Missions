@@ -1,0 +1,50 @@
+{
+    "mission.sqm" : {
+        "briefingName" : "Charlie Company Training Map v$0",
+        "overviewText" : "",
+        "author" : "CPT LaCombe, CW2 Raynor, CSM Argus, SSG Geki, & SSG Whitsel"
+    },
+    "description.ext" : {
+        "author" : "CPT LaCombe, CW2 Raynor, CSM Argus, SSG Geki, & SSG Whitsel",
+        "onLoadName" : "Charlie Company Training Map v$0",
+        "onLoadMission" : "Note: All platoon and company slots have Zeus",
+        "onLoadIntro" : "S3 1BN Battle Staff Training",
+        "loadScreen" : "Data\\CharlieBanner1.jpg",
+        "overviewPicture" : "Data\\CharlieBanner2.jpg",
+        "add" : []
+    },
+    "init.sqf" : {
+        "add" : [
+            "[] execVM \"scripts\\boardAircraftTP.sqf\";"
+        ]
+    },
+    "cba_settings.sqf" : {
+        "add" : [
+            "// cScripts Mission Settings",
+            "force force cScripts_Settings_allowCustomInit = true;",
+            "force force cScripts_Settings_allowCustomTagging = true;",
+            "force force cScripts_Settings_allowInsigniaApplication = true;",
+            "force force cScripts_Settings_curatorImmortality = true;",
+            "force force cScripts_Settings_enable7cavZeusModules = true;",
+            "force force cScripts_Settings_enableStartHint = true;",
+            "force force cScripts_Settings_enforceEyewereBlacklist = true;",
+            "force force cScripts_Settings_jumpSimulation = 1;",
+            "force force cScripts_Settings_jumpSimulationGlasses = true;",
+            "force force cScripts_Settings_jumpSimulationHat = true;",
+            "force force cScripts_Settings_jumpSimulationNVG = true;",
+            "force force cScripts_Settings_setAiSystemDifficulty = 0;",
+            "force force cScripts_Settings_setCustomHintText = \"I have design this mission! Yey for me!\";",
+            "force force cScripts_Settings_setCustomHintTopic = \"My custom Mission!\";",
+            "force force cScripts_Settings_setFortifyBudget = 800;",
+            "force force cScripts_Settings_setFortifyRestriction = 1;",
+            "force force cScripts_Settings_setMissionType = 1;",
+            "force force cScripts_Settings_setPlayerRank = true;",
+            "force force cScripts_Settings_setRadio = true;",
+            "force force cScripts_Settings_setStartupDelay = 30;",
+            "force force cScripts_Settings_showDiaryRecords = true;",
+            "force force cScripts_Settings_useCustomSupplyInventory = false;",
+            "force force cScripts_Settings_useCustomVehicleInventory = true;",
+            "force force cScripts_Settings_useCustomVehicleSettings = true;"
+        ]
+    }
+}
